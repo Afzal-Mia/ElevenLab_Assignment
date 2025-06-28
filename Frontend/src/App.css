@@ -1,0 +1,372 @@
+
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+
+        body {
+          margin: 0;
+          font-family: 'Inter', sans-serif;
+          background-color: #f3f4f6; 
+          color: #374151;
+        }
+
+        .app-container {
+          min-height: 100vh;
+          padding: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start; 
+        }
+
+        .main-content-wrapper {
+          max-width: 48rem; 
+          width: 100%;
+          margin: 0 auto;
+          background-color: #ffffff; 
+          border-radius: 0.5rem; 
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+          padding: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+          .main-content-wrapper {
+            padding: 2rem; 
+          }
+        }
+
+        .main-title {
+          font-size: 2.25rem; 
+          font-weight: 800; 
+          text-align: center;
+          color: #4338ca; 
+          margin-bottom: 2.5rem; 
+        }
+
+        section {
+          margin-bottom: 2.5rem; 
+          padding: 1.5rem; 
+          border-radius: 0.75rem;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+        }
+
+        section h2 {
+          font-size: 1.5rem;
+          font-weight: 700;
+          margin-bottom: 1rem; 
+        }
+
+        .course-types-section {
+          background-color: #eff6ff; 
+        }
+        .course-types-section h2 {
+          color: #1e40af;
+        }
+        .course-types-section .list-item {
+          background-color: #dbeafe; 
+          color: #1e3a8a;
+        }
+        .course-types-section .input-field,
+        .course-types-section .select-field {
+          border-color: #93c5fd;
+        }
+        .course-types-section .input-field:focus,
+        .course-types-section .select-field:focus {
+          border-color: #3b82f6; 
+          box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); 
+        }
+        .course-types-section .action-button {
+          background-color: #2563eb;
+          color: #ffffff;
+        }
+        .course-types-section .action-button:hover {
+          background-color: #1d4ed8; 
+        }
+
+
+        .courses-section {
+          background-color: #ecfdf5;
+        }
+        .courses-section h2 {
+          color: #166534; 
+        }
+        .courses-section .list-item {
+          background-color: #d1fae5; 
+          color: #064e3b; 
+        }
+        .courses-section .input-field,
+        .courses-section .select-field {
+          border-color: #86efac; 
+        }
+        .courses-section .input-field:focus,
+        .courses-section .select-field:focus {
+          border-color: #22c55e; 
+          box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.5);
+        }
+        .courses-section .action-button {
+          background-color: #16a34a; 
+          color: #ffffff;
+        }
+        .courses-section .action-button:hover {
+          background-color: #15803d;
+        }
+
+        .offerings-section {
+          background-color: #f5f3ff; 
+        }
+        .offerings-section h2 {
+          color: #6d28d9; 
+        }
+        .offerings-section .list-item {
+          background-color: #ede9fe; 
+          color: #5b21b6; 
+        }
+        .offerings-section .input-field,
+        .offerings-section .select-field {
+          border-color: #d8b4fe;
+        }
+        .offerings-section .input-field:focus,
+        .offerings-section .select-field:focus {
+          border-color: #a855f7; 
+          box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.5); 
+        }
+        .offerings-section .action-button {
+          background-color: #9333ea; 
+          color: #ffffff;
+        }
+        .offerings-section .action-button:hover {
+          background-color: #7e22ce; 
+        }
+
+        .filter-section {
+          background-color: #fffbeb;
+        }
+        .filter-section h2, .filter-section h3 {
+          color: #b45309; 
+        }
+        .filter-section .list-item {
+          background-color: #fef3c7; 
+          color: #92400e; 
+        }
+        .filter-section .input-field,
+        .filter-section .select-field {
+          border-color: #fcd34d; 
+        }
+        .filter-section .input-field:focus,
+        .filter-section .select-field:focus {
+          border-color: #f59e0b; 
+          box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.5); 
+        }
+        .filter-section .no-results {
+          color: #a16207; 
+        }
+
+        .registrations-section {
+          background-color: #eef2ff; 
+        }
+        .registrations-section h2, .registrations-section h3 {
+          color: #3730a3;
+        }
+        .registrations-section .list-item {
+          background-color: #e0e7ff;
+          color: #312e81;
+        }
+        .registrations-section .input-field,
+        .registrations-section .select-field {
+          border-color: #a5b4fc;
+        }
+        .registrations-section .input-field:focus,
+        .registrations-section .select-field:focus {
+          border-color: #6366f1; 
+          box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5); 
+        }
+        .registrations-section .no-results {
+          color: #4f46e5; 
+        }
+
+        .input-group {
+          display: flex;
+          flex-direction: column; 
+          gap: 0.75rem; 
+          margin-bottom: 1.5rem; 
+        }
+
+        .input-field, .select-field {
+          flex-grow: 1; 
+          padding: 0.75rem;
+          border-width: 1px;
+          border-style: solid;
+          border-color: #d1d5db; 
+          border-radius: 0.375rem; 
+          outline: none;
+          transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        .input-field:focus, .select-field:focus {
+          border-color: #6366f1; 
+          box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5); 
+        }
+
+        .action-button {
+          padding: 0.75rem 1.5rem; 
+          background-color: #6366f1;
+          color: #ffffff;
+          font-weight: 600; 
+          border-radius: 0.375rem;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+          transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+          border: none;
+          cursor: pointer;
+          white-space: nowrap; 
+        }
+
+        .action-button:hover {
+          background-color: #4f46e5; 
+          transform: scale(1.05);
+        }
+
+        .edit-button {
+          padding: 0.5rem 1rem; 
+          background-color: #f59e0b;
+          color: #ffffff;
+          border-radius: 0.375rem; 
+          transition: background-color 0.3s ease-in-out;
+          border: none;
+          cursor: pointer;
+        }
+        .edit-button:hover {
+          background-color: #d97706; 
+        }
+
+        .delete-button {
+          padding: 0.5rem 1rem;
+          background-color: #ef4444; 
+          color: #ffffff;
+          border-radius: 0.375rem; 
+          transition: background-color 0.3s ease-in-out;
+          border: none;
+          cursor: pointer;
+        }
+        .delete-button:hover {
+          background-color: #dc2626;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+        }
+
+        .list-item {
+          display: flex;
+          flex-direction: column; 
+          justify-content: space-between;
+          align-items: flex-start;
+          padding: 1rem; 
+          border-radius: 0.5rem; 
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); 
+        }
+        .list-item span {
+          font-weight: 500; 
+          font-size: 1.125rem; 
+          margin-bottom: 0.5rem; 
+        }
+        .list-item .button-group {
+          display: flex;
+          gap: 0.5rem;
+        }
+
+        @media (min-width: 640px) {
+          .input-group {
+            flex-direction: row;
+          }
+          .list-item {
+            flex-direction: row;
+            align-items: center;
+          }
+          .list-item span {
+            margin-bottom: 0;
+          }
+        }
+
+        
+        .modal-overlay {
+          position: fixed;
+          inset: 0;
+          background-color: rgba(107, 114, 128, 0.75); 
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem;
+        }
+
+        .modal-content {
+          background-color: #ffffff; 
+          padding: 2rem; 
+          border-radius: 0.5rem;
+          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+          width: 100%;
+          max-width: 28rem; 
+        }
+
+        .modal-content h3 {
+          font-size: 1.5rem; 
+          font-weight: 700; 
+          margin-bottom: 1.5rem; 
+          color: #374151; 
+        }
+
+        .modal-content .modal-input-field,
+        .modal-content .modal-select-field {
+          width: 100%;
+          padding: 0.75rem;
+          border-width: 1px;
+          border-style: solid;
+          border-color: #d1d5db; 
+          border-radius: 0.375rem; 
+          margin-bottom: 1rem; 
+          outline: none;
+          transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        .modal-content .modal-input-field:focus,
+        .modal-content .modal-select-field:focus {
+          border-color: #6366f1; 
+          box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+        }
+
+        .modal-buttons {
+          display: flex;
+          justify-content: flex-end;
+          gap: 0.75rem;
+        }
+
+        .modal-cancel-button {
+          padding: 0.75rem 1.5rem; 
+          background-color: #d1d5db; 
+          color: #374151; 
+          font-weight: 600;
+          border-radius: 0.375rem;
+          transition: background-color 0.3s ease-in-out;
+          border: none;
+          cursor: pointer;
+        }
+        .modal-cancel-button:hover {
+          background-color: #9ca3af; 
+        }
+
+        .modal-save-button {
+          padding: 0.75rem 1.5rem;
+          background-color: #4f46e5; 
+          color: #ffffff;
+          font-weight: 600; 
+          border-radius: 0.375rem; 
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+          transition: background-color 0.3s ease-in-out;
+          border: none;
+          cursor: pointer;
+        }
+        .modal-save-button:hover {
+          background-color: #4338ca; 
+        }
+        
